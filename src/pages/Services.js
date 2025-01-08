@@ -34,7 +34,7 @@ const Services = () => {
     dots: true,
     infinite: true,
     autoplay: true, // Enables auto play
-    autoplaySpeed: 1000, // Time between auto-slide (in ms)
+    autoplaySpeed: 2000, // Time between auto-slide (in ms)
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -56,8 +56,8 @@ const Services = () => {
   return (
     <>
       <Hr />
-      <section className="bg-sky-50 min-h-screen py-20">
-        <div className="container mx-auto text-center p-4">
+      <section className="bg-sky-50 min-h-screen px-16 pt-8">
+        <div className="container mx-auto text-center ">
           <h2 className="text-3xl font-bold mb-12">Our Services</h2>
           <p className="text-lg mb-12">
             We offer a wide range of high-quality services to meet your business needs.

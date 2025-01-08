@@ -1,16 +1,32 @@
 import React from 'react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import Hr from '../components/Hr';
+import SEO from '../components/SEO';
+
 
 const About = () => {
   return (
     <>
-      <Hr />
-      <section className="bg-sky-50 min-h-screen flex flex-col-reverse md:flex-row items-center justify-center">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
+      <SEO
+        title="About Us - Isgultechsolutions"
+        description="Learn more about Isgultechsolutions - a team of passionate professionals providing innovative and effective business solutions with a focus on excellence and creativity."
+        keywords="About Isgultechsolutions, tech solutions, innovative solutions, professional team"
+        author="Isgultechsolutions Team"
+        robots="index, follow"
+        canonicalUrl="https://isgultechsolutions.onrender.com/about"
+        ogTitle="About Us - Isgultechsolutions"
+        ogDescription="Discover our team's commitment to providing high-quality, innovative solutions tailored to your business needs."
+        ogImage="https://isgultechsolutions.onrender.com/about-page-image.png" // Replace with the actual image URL
+        ogUrl="https://isgultechsolutions.com/about"
+        twitterCard="summary_large_image"
+        twitterTitle="About Us - Isgultechsolutions"
+        twitterDescription="Learn more about our innovative solutions and how we exceed client expectations at Isgultechsolutions."
+        twitterImage="https://isgultechsolutions.onrender.com/assets/-image.png" // Replace with the actual image URL
+      />
+      <section className="bg-sky-50 min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-8 py-16">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center ">
           <div className="md:w-1/2">
             <DotLottieReact
-              src="https://lottie.host/bb37c84c-b5e6-4403-a40e-9bb0e79951b1/ucb2dItASh.lottie"
+              src="https://lottie.host/14fdcb47-1f05-4964-bc30-e436efb01405/MFFMkp1BNL.lottie"
               loop
               autoplay
               renderer="svg"

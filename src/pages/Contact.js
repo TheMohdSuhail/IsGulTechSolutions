@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import SEO from '../components/SEO';
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -20,7 +21,26 @@ const Contact = () => {
     };
 
     return (
-        <section className="bg-sky-50 p-8">
+        <>
+        <SEO
+  title="Contact Us - IsGulTechSolutions"
+  description="Get in touch with IsGulTechSolutions for inquiries, feedback, or business partnerships. We are here to help with your tech needs."
+  keywords="Contact IsGulTechSolutions, tech support, inquiries, business partnership, contact us"
+  author="IsGulTechSolutions Team"
+  robots="index, follow"
+  canonicalUrl="https://isgultechsolutions.com/contact"
+  ogTitle="Contact Us - IsGulTechSolutions"
+  ogDescription="Have questions or want to learn more? Reach out to us through the contact form or directly via email at IsGulTechSolutions."
+  ogImage="https://isgultechsolutions.com/assets/contact-page-image.png" // Replace with your actual image URL
+  ogUrl="https://isgultechsolutions.com/contact"
+  twitterCard="summary_large_image"
+  twitterTitle="Contact Us - IsGulTechSolutions"
+  twitterDescription="Have a question or want to collaborate? Contact IsGulTechSolutions today. We are here to assist you with all your business tech needs."
+  twitterImage="https://isgultechsolutions.com/assets/contact-page-image.png" // Replace with your actual image URL
+/>
+
+        
+        <section className="bg-sky-50 px-8 py-16">
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
                 <div className="md:w-1/2">
                     <DotLottieReact
@@ -32,7 +52,7 @@ const Contact = () => {
                     />
     
                 </div>
-                <div className="md:w-1/2 p-4">
+                <div className="md:w-1/2 p-16">
                     <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
                     <p className="text-lg mb-4">
                         Have a question or want to learn more?
@@ -92,6 +112,7 @@ const Contact = () => {
                 </div>
             </div>
         </section>
+        </>
     );
 };
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SEO from '../components/SEO';
 
 const Career = () => {
   const [name, setName] = useState('');
@@ -21,9 +22,26 @@ const Career = () => {
   };
 
   return (
-    <section className="bg-sky-50 p-8">
+    <>
+    <SEO
+  title="Careers at IsGulTechSolutions"
+  description="Explore exciting career opportunities at IsGulTechSolutions. Join our passionate team and work in a dynamic, innovative, and collaborative environment."
+  keywords="Careers at IsGulTechSolutions, job opportunities, software development jobs, marketing jobs, design jobs, data science jobs"
+  author="IsGulTechSolutions Team"
+  robots="index, follow"
+  canonicalUrl="https://isgultechsolutions.com/careers"
+  ogTitle="Careers at IsGulTechSolutions"
+  ogDescription="Join the IsGulTechSolutions team and make a real impact. Discover career opportunities in software development, marketing, design, and more."
+  ogImage="https://isgultechsolutions.com/assets/careers-page-image.png" // Replace with your image URL
+  ogUrl="https://isgultechsolutions.com/careers"
+  twitterCard="summary_large_image"
+  twitterTitle="Careers at IsGulTechSolutions"
+  twitterDescription="Join our growing team of talented professionals. Explore career opportunities at IsGulTechSolutions and grow with us."
+  twitterImage="https://isgultechsolutions.com/assets/careers-page-image.png" // Replace with your image URL
+/>
+    <section className="bg-sky-50 px-8 pt-24 pb-8">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
-        <div className="md:w-1/2 text-center md:text-left px-4">
+        <div className="md:w-1/2 text-center md:text-left  px-4">
           <h2 className="text-3xl font-bold mb-4 items-center">Careers at IsGulTachSolutions</h2>
           <p className="text-lg mb-4">
             Join our growing team of passionate professionals and make a real impact. 
@@ -108,6 +126,8 @@ const Career = () => {
         </div>
       </div>
     </section>
+    
+    </>
   );
 };
 

@@ -40,7 +40,7 @@ const ClientSection = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 1000, // Slide every second
+    autoplaySpeed: 2000, // Slide every second
     centerMode: true,
     centerPadding: '0px',
     nextArrow: <NextArrow />,
@@ -94,7 +94,7 @@ const ClientSection = () => {
   return (
     <>
       <Hr />
-      <section className="py-16 bg-sky-50">
+      <section className=" bg-sky-50 p-12">
         <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
         <div className="container mx-auto">
           <Slider {...settings}>

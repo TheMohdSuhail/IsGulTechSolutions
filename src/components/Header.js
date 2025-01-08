@@ -35,15 +35,17 @@ const Header = () => {
       )}
 
 
-      <div className="container mx-auto flex items-center justify-between p-4 relative z-50">
+      <div className="container mx-auto flex items-center justify-between p-4 relative z-50 bg-sky-50">
         {/* Logo Section */}
+        <Link to="/">
         <div className="flex items-center">
           <img
             src={assets.logo}
             alt="Isgultech Solutions Logo"
-            className="w-24 mr-4"
+            className="w-24 ml-10"
           />
         </div>
+        </Link>
 
         {/* Navbar Section */}
         <nav className="absolute left-1/2 transform -translate-x-1/2 rounded-full border p-2 border-black hidden lg:block">
@@ -55,7 +57,7 @@ const Header = () => {
               <Link to="/about" className="px-4 hover:underline">About</Link>
             </li>
             <li>
-              <Link to="/internship" className="px-4 hover:underline">Internship</Link>
+              <Link to="/internship" className="px-4 hover:underline">Internship Program</Link>
             </li>
             <li>
               <Link to="/career" className="px-4 hover:underline">Career</Link>
@@ -67,7 +69,7 @@ const Header = () => {
         </nav>
         {/* Hamburger Menu for Mobile */}
         <button
-          className="block lg:hidden text-xl"
+          className="block  lg:hidden text-xl"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
@@ -76,7 +78,7 @@ const Header = () => {
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
           <nav
-            className="absolute top-16 left-0 w-full bg-sky-50 shadow-md lg:hidden"
+            className="absolute top-16 left-0 w-full bg-sky-50 shadow-md  lg:hidden"
           >
             <ul className="flex flex-col items-center gap-4 py-4">
               <li>
@@ -103,7 +105,7 @@ const Header = () => {
                   className="block px-4 hover:underline"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Internship
+                  Internship Program
                 </Link>
               </li>
               <li>
