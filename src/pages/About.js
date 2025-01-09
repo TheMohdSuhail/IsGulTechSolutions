@@ -15,12 +15,12 @@ const About = () => {
         canonicalUrl="https://isgultechsolutions.onrender.com/about"
         ogTitle="About Us - Isgultechsolutions"
         ogDescription="Discover our team's commitment to providing high-quality, innovative solutions tailored to your business needs."
-        ogImage="https://isgultechsolutions.onrender.com/about-page-image.png" // Replace with the actual image URL
-        ogUrl="https://isgultechsolutions.com/about"
+        ogImage="https://isgultechsolutions.onrender.com/logo.png" // Replace with the actual image URL
+        ogUrl="https://isgultechsolutions.onrender.com/about"
         twitterCard="summary_large_image"
         twitterTitle="About Us - Isgultechsolutions"
         twitterDescription="Learn more about our innovative solutions and how we exceed client expectations at Isgultechsolutions."
-        twitterImage="https://isgultechsolutions.onrender.com/assets/-image.png" // Replace with the actual image URL
+        twitterImage="https://isgultechsolutions.onrender.com/twitter.png" // Replace with the actual image URL
       />
       <section className="bg-sky-50 min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-8 py-16">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center ">

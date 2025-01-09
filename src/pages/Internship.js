@@ -24,15 +24,15 @@ const Internship = () => {
                 keywords="internship, software development internship, marketing internship, design internship, data science internship, internship opportunities"
                 author="IsGulTechSolutions Team"
                 robots="index, follow"
-                canonicalUrl="https://isgultechsolutions.com/internship"
+                canonicalUrl="https://isgultechsolutions.onrender.com/internship"
                 ogTitle="Internship Opportunities - IsGulTechSolutions"
                 ogDescription="Start your career with IsGulTechSolutions' internship programs. Apply now for a great learning experience and build your skills with industry experts."
-                ogImage="https://isgultechsolutions.com/assets/internship-social-image.png" // Replace with your actual image URL
-                ogUrl="https://isgultechsolutions.com/internship"
+                ogImage="https://isgultechsolutions.onrender.com/logo.png" 
+                ogUrl="https://isgultechsolutions.onrender.com/internship"
                 twitterCard="summary_large_image"
                 twitterTitle="Internship Opportunities at IsGulTechSolutions"
                 twitterDescription="Join IsGulTechSolutions for an exciting internship experience. Apply today and enhance your career development!"
-                twitterImage="https://isgultechsolutions.com/assets/internship-social-image.png" // Replace with your actual image URL
+                twitterImage="https://isgultechsolutions.onrender.com/twitter.png" 
             />
             <section className="bg-sky-50 min-h-screen flex flex-col items-center justify-center p-8 shadow-2xl shadow-orange-600">
                 <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">

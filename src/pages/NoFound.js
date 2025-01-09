@@ -11,15 +11,15 @@ const NotFound = () => {
         keywords="404, page not found, error, website error, return to homepage"
         author="IsGulTechSolutions Team"
         robots="noindex, nofollow"
-        canonicalUrl="https://isgultechsolutions.com/404"
+        canonicalUrl="https://isgultechsolutions.onrender.com/404"
         ogTitle="404 - Page Not Found"
         ogDescription="Oops! It seems the page you are looking for does not exist. Visit our homepage or explore other content."
-        ogImage="https://isgultechsolutions.com/assets/404-error.png" // Replace with your actual image URL
-        ogUrl="https://isgultechsolutions.com/404"
+        ogImage="https://isgultechsolutions.onrender.com/logo.png" 
+        ogUrl="https://isgultechsolutions.onrender.com/404"
         twitterCard="summary_large_image"
         twitterTitle="404 - Page Not Found"
         twitterDescription="Page not found! Return to our homepage or check out more exciting content on the website."
-        twitterImage="https://isgultechsolutions.com/assets/404-error.png" // Replace with your actual image URL
+        twitterImage="https://isgultechsolutions.onrender.com/twitter.png" // Replace with your actual image URL
       />
     <div className="flex flex-col items-center justify-center min-h-screen bg-sky-50 text-black">
 

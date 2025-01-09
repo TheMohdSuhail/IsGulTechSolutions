@@ -28,15 +28,15 @@ const Contact = () => {
   keywords="Contact IsGulTechSolutions, tech support, inquiries, business partnership, contact us"
   author="IsGulTechSolutions Team"
   robots="index, follow"
-  canonicalUrl="https://isgultechsolutions.com/contact"
+  canonicalUrl="https://isgultechsolutions.onrender.com/contact"
   ogTitle="Contact Us - IsGulTechSolutions"
   ogDescription="Have questions or want to learn more? Reach out to us through the contact form or directly via email at IsGulTechSolutions."
-  ogImage="https://isgultechsolutions.com/assets/contact-page-image.png" // Replace with your actual image URL
-  ogUrl="https://isgultechsolutions.com/contact"
+  ogImage="https://isgultechsolutions.onrender.com/logo.png" // Replace with your actual image URL
+  ogUrl="https://isgultechsolutions.onrender.com/contact"
   twitterCard="summary_large_image"
   twitterTitle="Contact Us - IsGulTechSolutions"
   twitterDescription="Have a question or want to collaborate? Contact IsGulTechSolutions today. We are here to assist you with all your business tech needs."
-  twitterImage="https://isgultechsolutions.com/assets/contact-page-image.png" // Replace with your actual image URL
+  twitterImage="https://isgultechsolutions.onrender.com/twitter.png" // Replace with your actual image URL
 />
 
         

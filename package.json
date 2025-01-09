@@ -12,6 +12,7 @@
     "react-icons": "^5.4.0",
     "react-lottie-player": "^2.1.0",
     "react-router-dom": "^6.28.1",
+    "react-router-sitemap": "^1.2.0",
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.3",
     "react-swiper": "^0.1.5",

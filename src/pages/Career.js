@@ -29,15 +29,15 @@ const Career = () => {
   keywords="Careers at IsGulTechSolutions, job opportunities, software development jobs, marketing jobs, design jobs, data science jobs"
   author="IsGulTechSolutions Team"
   robots="index, follow"
-  canonicalUrl="https://isgultechsolutions.com/careers"
+  canonicalUrl="https://isgultechsolutions.onrender.com/careers"
   ogTitle="Careers at IsGulTechSolutions"
   ogDescription="Join the IsGulTechSolutions team and make a real impact. Discover career opportunities in software development, marketing, design, and more."
-  ogImage="https://isgultechsolutions.com/assets/careers-page-image.png" // Replace with your image URL
-  ogUrl="https://isgultechsolutions.com/careers"
+  ogImage="https://isgultechsolutions.onrender.com/logo.png" 
+  ogUrl="https://isgultechsolutions.onrender.com/careers"
   twitterCard="summary_large_image"
   twitterTitle="Careers at IsGulTechSolutions"
   twitterDescription="Join our growing team of talented professionals. Explore career opportunities at IsGulTechSolutions and grow with us."
-  twitterImage="https://isgultechsolutions.com/assets/careers-page-image.png" // Replace with your image URL
+  twitterImage="https://isgultechsolutions.onrender.com/twitter.png" 
 />
     <section className="bg-sky-50 px-8 pt-24 pb-8">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
