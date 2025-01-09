@@ -2,7 +2,7 @@
 import logo from './ISGulTechLogo.png'; 
 import HeroImage from './HeroImage.png'; 
 import heroSection from './heroSection.png';
-import Certificate from './Certificate.png';
+import Certificate from './CertificateSample.png';
 
 const assets = {
   logo,

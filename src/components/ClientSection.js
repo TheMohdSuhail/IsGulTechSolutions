@@ -65,31 +65,32 @@ const ClientSection = () => {
 
   const clients = [
     {
-      name: "Company A",
+      name: "Rajesh Singh",
       testimonial:
-        "Working with [Your Company Name] has been a pleasure. They exceeded our expectations and delivered a top-notch product.",
+        "Working with Isgultechsolutions has been a pleasure. They exceeded our expectations and delivered a top-notch product.",
     },
     {
-      name: "Company B",
+      name: "Priya Sharma",
       testimonial:
-        "We were impressed with [Your Company Name]'s professionalism and dedication. They truly understand our business needs.",
+        "We were impressed with Isgultechsolutions' professionalism and dedication. They truly understand our business needs.",
     },
     {
-      name: "Company C",
+      name: "Amit Verma",
       testimonial:
-        "Highly recommend [Your Company Name]. They provided excellent service and delivered our project on time and within budget.",
+        "Highly recommend Isgultechsolutions. They provided excellent service and delivered our project on time and within budget.",
     },
     {
-      name: "Company D",
+      name: "Sneha Gupta",
       testimonial:
-        "A fantastic team to work with! [Your Company Name] brings incredible ideas and implements them flawlessly.",
+        "A fantastic team to work with! Isgultechsolutions brings incredible ideas and implements them flawlessly.",
     },
     {
-      name: "Company E",
+      name: "Vikram Chaudhary",
       testimonial:
-        "The best decision we made was choosing [Your Company Name]. Highly satisfied with their work.",
+        "The best decision we made was choosing Isgultechsolutions. Highly satisfied with their work.",
     },
   ];
+  
 
   return (
     <>

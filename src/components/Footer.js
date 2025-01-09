@@ -81,7 +81,7 @@ const Footer = () => {
       <div className="text-black text-center">
         <p>&copy; {new Date().getFullYear()} ISGUL TechSolution All Rights Reserved.</p>
         <p className="pb-4">
-          Developed & Designed by{' '}
+        Designed & Developed By{' '}
           <a
             href="https://msp-portfolio.onrender.com/"
             target="_blank"

@@ -57,10 +57,10 @@ const Header = () => {
               <Link to="/about" className="px-4 hover:underline">About</Link>
             </li>
             <li>
-              <Link to="/internship" className="px-4 hover:underline">Internship Program</Link>
+              <Link to="/internship" className="px-4 hover:underline">Internship</Link>
             </li>
             <li>
-              <Link to="/career" className="px-4 hover:underline">Career</Link>
+              <Link to="/career" className="px-4 hover:underline">Careers</Link>
             </li>
             <li>
               <Link to="/contact" className="px-4 hover:underline">Contact</Link>
