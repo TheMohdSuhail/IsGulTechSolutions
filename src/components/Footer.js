@@ -5,19 +5,19 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-sky-50 text-black  shadow-2xl shadow-blue-800 ">
+    <footer className="bg-sky-50 text-black shadow-2xl shadow-blue-800">
       <div className="grid sm:grid-cols-1 md:grid-cols-4 gap-8 p-14">
         <div className="flex flex-col">
           <h2 className="text-xl font-bold text-black">
             <img src={assets.logo} alt="IsGulTechSolutions Logo" className="w-24" />
           </h2>
           <p className="text-black pl-2">
-            ISGUL TECH SOULTIONS offers professional website and mobile app development services, focusing on user experience, responsiveness, and SEO optimization.
+            ISGUL TECH SOLUTIONS offers professional website and mobile app development services, focusing on user experience, responsiveness, and SEO optimization.
           </p>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col pl-2">
           <h1 className="text-xl font-bold mb-4 text-black">ISGUL</h1>
-          <ul className="list-none ">
+          <ul className="list-none">
             <li>
               <Link to="/" className="text-black hover:underline">
                 Home
@@ -35,7 +35,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col pl-2">
           <h1 className="text-xl font-bold mb-4 text-black">Community</h1>
           <ul className="list-none">
             <li>
@@ -55,7 +55,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col pl-2">
           <h1 className="text-xl font-bold mb-4 text-black">Find Us At</h1>
           <ul className="list-none">
             <li>
@@ -79,8 +79,8 @@ const Footer = () => {
       </div>
 
       <div className="text-black text-center">
-        <p>&copy; {new Date().getFullYear()} ISGUL TechSolution All Rights Reserved .</p>
-        <p className='pb-4'>
+        <p>&copy; {new Date().getFullYear()} ISGUL TechSolution All Rights Reserved.</p>
+        <p className="pb-4">
           Developed & Designed by{' '}
           <a
             href="https://msp-portfolio.onrender.com/"
@@ -106,7 +106,6 @@ const Footer = () => {
           </a>
         </div>
       </div>
-
     </footer>
   );
 };
