@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0a2790de.css",
+    "main.js": "/static/js/main.6ee22f88.js",
+    "static/js/488.61e7eeec.chunk.js": "/static/js/488.61e7eeec.chunk.js",
+    "static/media/HeroImage.png": "/static/media/HeroImage.21390a3d5a4abc777086.png",
+    "static/media/CertificateSample.png": "/static/media/CertificateSample.98836501f02e31cb6387.png",
+    "static/media/ISGulTechLogo.png": "/static/media/ISGulTechLogo.9cbe57f3604b1104702f.png",
+    "static/media/heroSection.png": "/static/media/heroSection.51ad4f3faa568a90375a.png",
+    "index.html": "/index.html",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "main.0a2790de.css.map": "/static/css/main.0a2790de.css.map",
+    "main.6ee22f88.js.map": "/static/js/main.6ee22f88.js.map",
+    "488.61e7eeec.chunk.js.map": "/static/js/488.61e7eeec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a2790de.css",
+    "static/js/main.6ee22f88.js"
+  ]
+}
