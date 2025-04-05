@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
-
 import Slider from 'react-slick';
-
 import "slick-carousel/slick/slick.css";
-
 import "slick-carousel/slick/slick-theme.css";
-
 import Hr from './Hr';
 
 const NextArrow = ({ onClick }) => (
@@ -34,10 +30,10 @@ const ClientSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 3,
+    speed: 1000,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true, // Enable autoplay
     autoplaySpeed: 2000, // Slide every second
@@ -45,7 +41,7 @@ const ClientSection = () => {
     centerPadding: '0px',
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    rtl: true, // Left-to-right sliding
+    // rtl: true, // Left-to-right sliding
     responsive: [
       {
         breakpoint: 1024,
@@ -67,51 +63,64 @@ const ClientSection = () => {
     {
       name: "Rajesh Singh",
       testimonial:
-        "Working with Isgultechsolutions has been a pleasure. They exceeded our expectations and delivered a top-notch product.",
+        "Working with ISGUL TECH SOLUTIONS has been an absolute pleasure. Their team went above and beyond to understand our specific business needs, and they consistently delivered exceptional work that exceeded our expectations. From initial consultation to the final product, the entire process was smooth and seamless. Their expertise in web development and dedication to client satisfaction is unparalleled, and I’m thrilled with the results.",
+      image: "https://randomuser.me/api/portraits/men/1.jpg",
     },
     {
       name: "Priya Sharma",
       testimonial:
-        "We were impressed with Isgultechsolutions' professionalism and dedication. They truly understand our business needs.",
+        "We were thoroughly impressed with ISGUL TECH SOLUTIONS' professionalism, knowledge, and commitment to delivering high-quality results. From the moment we started working with them, it was clear they truly understood the intricacies of our business. They not only delivered a stunning, user-friendly website but also provided insightful guidance that helped elevate our online presence. We felt fully supported at every stage of the project, and I would highly recommend them to anyone looking for a reliable partner in the digital space.",
+      image: "https://randomuser.me/api/portraits/women/1.jpg",
     },
     {
       name: "Amit Verma",
       testimonial:
-        "Highly recommend Isgultechsolutions. They provided excellent service and delivered our project on time and within budget.",
+        "ISGUL TECH SOLUTIONS is an incredible company that truly cares about their clients. We were initially concerned about meeting tight deadlines, but they handled everything with ease and professionalism. Not only did they deliver our website on time, but they also made sure it was fully functional, visually appealing, and optimized for our target audience. Their attention to detail and commitment to exceeding expectations has made them our go-to team for all future development projects.",
+      image: "https://randomuser.me/api/portraits/men/2.jpg",
     },
     {
       name: "Sneha Gupta",
       testimonial:
-        "A fantastic team to work with! Isgultechsolutions brings incredible ideas and implements them flawlessly.",
+        "I had an amazing experience working with ISGUL TECH SOLUTIONS. Their team brought fresh, innovative ideas to the table and implemented them flawlessly. From the very beginning, it was evident that they are experts in their field. They understood the vision I had for my website and executed it with precision, ensuring that every aspect met our standards. Their communication was excellent, and they kept us updated throughout the entire process. The final product exceeded my expectations, and I look forward to collaborating with them again in the future.",
+      image: "https://randomuser.me/api/portraits/women/2.jpg",
     },
     {
       name: "Vikram Chaudhary",
       testimonial:
-        "The best decision we made was choosing Isgultechsolutions. Highly satisfied with their work.",
+        "Choosing ISGUL TECH SOLUTIONS was one of the best business decisions we've made. Their team not only understood our requirements but also took the time to propose ideas that would benefit our business in the long run. They offered valuable insights that we hadn’t considered, which helped us improve our product and services. They completed the project within budget and exceeded our expectations with the final result. I am incredibly satisfied with their work and would highly recommend them to any business seeking reliable and innovative solutions.",
+      image: "https://randomuser.me/api/portraits/men/3.jpg",
     },
   ];
-  
 
   return (
     <>
       <Hr />
-      <section className=" bg-sky-50 p-12">
-        <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+      <section className=" p-12 ">
+        <h2 className="text-3xl font-bold text-center mb-12 text-bgLight">What Our Clients Say</h2>
         <div className="container mx-auto">
           <Slider {...settings}>
             {clients.map((client, index) => (
-              <div key={index} className="px-4 ">
-                <div className="bg-sky-50 p-6 rounded-lg shadow-lg text-center flex flex-col justify-between h-full">
-                  <p className="text-gray-700 text-sm leading-relaxed pb-8">
+              <div key={index} className="px-4">
+                <div className="bg-bgLight p-6 rounded-lg shadow-xl text-center flex flex-col justify-between h-[75vh] transition-all hover:shadow-2xl">
+                  <div className="flex justify-center mb-6">
+                    <img
+                      src={client.image}
+                      alt={client.name}
+                      className="w-40 h-40 rounded-full object-cover border-4 border-blue-500"
+                    />
+                  </div>
+                  <h3 className="text-lg font-semibold">{client.name}</h3>
+                  <p className="text-gray-700 text-xl leading-relaxed pb-8 text-justify">
                     &#8220;{client.testimonial}&#8221;
                   </p>
-                  <h3 className="text-lg font-semibold mt-auto">{client.name}</h3> 
+                  {/* Client name moved below the image */}
                 </div>
               </div>
             ))}
           </Slider>
         </div>
       </section>
+      <Hr />
     </>
   );
 };

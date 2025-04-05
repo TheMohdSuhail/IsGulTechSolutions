@@ -4,6 +4,7 @@ import SEO from "../components/SEO";
 import Hero from "../components/Hero";
 import Services from "./Services";
 import ClientSection from "../components/ClientSection";
+import VideoBackground from "../components/VideoBackground";
 
 const Home = () => {
   return (
@@ -25,7 +26,8 @@ const Home = () => {
                 twitterImage="https://isgultechsolutions.onrender.com/twitter.png"
             />
     {/* HeroSection */}
-    <Hero />
+    {/* <Hero /> */}
+    <VideoBackground />
     {/* Our Service */}
     <Services />
     {/* clientSection */}

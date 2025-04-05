@@ -21,7 +21,7 @@ const NotFound = () => {
         twitterDescription="Page not found! Return to our homepage or check out more exciting content on the website."
         twitterImage="https://isgultechsolutions.onrender.com/twitter.png" // Replace with your actual image URL
       />
-    <div className="flex flex-col items-center justify-center min-h-screen bg-sky-50 text-black">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-primary text-black">
 
       
     <DotLottieReact

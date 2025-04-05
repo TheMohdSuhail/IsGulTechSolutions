@@ -16,6 +16,12 @@ const Internship = () => {
         }, 100);
     };
 
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+        window.open("https://forms.gle/auzqQfzy7cndF1Fk7", "_blank");
+    };
+    
+
     return (
         <>
             <SEO
@@ -27,14 +33,14 @@ const Internship = () => {
                 canonicalUrl="https://isgultechsolutions.onrender.com/internship"
                 ogTitle="Internship Opportunities - IsGulTechSolutions"
                 ogDescription="Start your career with IsGulTechSolutions' internship programs. Apply now for a great learning experience and build your skills with industry experts."
-                ogImage="https://isgultechsolutions.onrender.com/logo.png" 
+                ogImage="https://isgultechsolutions.onrender.com/logo.png"
                 ogUrl="https://isgultechsolutions.onrender.com/internship"
                 twitterCard="summary_large_image"
                 twitterTitle="Internship Opportunities at IsGulTechSolutions"
                 twitterDescription="Join IsGulTechSolutions for an exciting internship experience. Apply today and enhance your career development!"
-                twitterImage="https://isgultechsolutions.onrender.com/twitter.png" 
+                twitterImage="https://isgultechsolutions.onrender.com/twitter.png"
             />
-            <section className="bg-sky-50 min-h-screen flex flex-col items-center justify-center p-8 shadow-2xl shadow-orange-600">
+            <section className="bg-bgDark text-bgLight min-h-screen flex flex-col items-center justify-center p-8 lg:p-32 shadow-2xl shadow-orange-600">
                 <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
                     {/* Animation Section */}
                     <div className="md:w-1/2">
@@ -67,12 +73,12 @@ const Internship = () => {
                 {showForm && (
                     <div
                         ref={formRef}
-                        className="h-screen flex flex-col md:flex-row items-center justify-center bg-sky-50 p-8 w-full"
+                        className="h-screen flex flex-col md:flex-row items-center justify-center bg-sky-50 p-8 w-full rounded-md"
                     >
                         {/* Internship Form */}
                         <div className="md:w-2/3 pr-8">
-                            <form className="w-full">
-                                <h3 className="text-2xl font-bold mb-4">Internship Application</h3>
+                            <form className="w-full " onSubmit={handleFormSubmit}>
+                                <h3 className="text-2xl font-bold mb-4 text-bgDark">Internship Application</h3>
                                 <div className="mb-4">
                                     <label
                                         htmlFor="name"
@@ -85,7 +91,7 @@ const Internship = () => {
                                         id="name"
                                         name="name"
                                         required
-                                        className="w-1/2 p-2 border rounded-lg"
+                                        className="w-1/2 p-2 border rounded-lg text-bgDark "
                                         placeholder="Enter your name"
                                     />
                                 </div>
@@ -102,7 +108,7 @@ const Internship = () => {
                                         id="email"
                                         name="email"
                                         required
-                                        className="w-1/2 p-2 border rounded-lg"
+                                        className="w-1/2 p-2 border rounded-lg text-bgDark"
                                         placeholder="Enter your email"
                                     />
                                 </div>
@@ -117,7 +123,7 @@ const Internship = () => {
                                     <select
                                         id="domain"
                                         name="domain"
-                                        className="w-1/2 p-2 border rounded-lg"
+                                        className="w-1/2 p-2 border rounded-lg text-bgDark"
                                         required
                                     >
                                         <option value="">Select a domain</option>
@@ -152,6 +158,7 @@ const Internship = () => {
                                 >
                                     Submit Application
                                 </button>
+
                             </form>
                         </div>
 

@@ -10,15 +10,29 @@ const Contact = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Handle form submission here (e.g., send email, display success message)
-        console.log('Name:', name);
-        console.log('Email:', email);
-        console.log('Message:', message);
-        // Reset form fields
-        setName('');
-        setEmail('');
-        setMessage('');
+    
+        const subject = `Contact Form Submission from ${name}`;
+        const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+    
+        // ✅ Note the "mailto:" prefix below
+        const mailtoLink = `mailto:isgultechsolutions@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+        // Try opening the user's default email client
+        const mailWindow = window.open(mailtoLink, '_blank');
+    
+        // Fallback in case popup is blocked
+        if (!mailWindow || mailWindow.closed || typeof mailWindow.closed === 'undefined') {
+            window.location.href = mailtoLink;
+        }
+    
+        // Reset form fields after short delay
+        setTimeout(() => {
+            setName('');
+            setEmail('');
+            setMessage('');
+        }, 1000);
     };
+    
 
     return (
         <>
@@ -40,7 +54,7 @@ const Contact = () => {
 />
 
         
-        <section className="bg-sky-50 px-8 py-16">
+        <section className="bg-bgDark px-8 py-16 text-bgLight">
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
                 <div className="md:w-1/2">
                     <DotLottieReact
@@ -53,14 +67,14 @@ const Contact = () => {
     
                 </div>
                 <div className="md:w-1/2 p-16">
-                    <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
+                    <h2 className="text-3xl font-bold mb-4 ">Contact Us</h2>
                     <p className="text-lg mb-4">
                         Have a question or want to learn more?
                         Feel free to contact us using the form below or reach out to us directly.
                     </p>
                     <form onSubmit={handleSubmit}>
                         <div className="mb-4">
-                            <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">
+                            <label htmlFor="name" className="block  text-sm font-bold mb-2">
                                 Name:
                             </label>
                             <input
@@ -74,7 +88,7 @@ const Contact = () => {
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
+                            <label htmlFor="email" className="block  text-sm font-bold mb-2">
                                 Email:
                             </label>
                             <input
@@ -88,7 +102,7 @@ const Contact = () => {
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="message" className="block text-gray-700 text-sm font-bold mb-2">
+                            <label htmlFor="message" className="block  text-sm font-bold mb-2">
                                 Message:
                             </label>
                             <textarea
@@ -97,7 +111,7 @@ const Contact = () => {
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                                 rows="4"
-                                className="w-full p-2 border rounded-lg"
+                                className="w-full p-2 border rounded-lg text-bgDark"
                                 required
                             ></textarea>
                         </div>
